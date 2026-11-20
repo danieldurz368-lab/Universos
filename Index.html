@@ -1,0 +1,661 @@
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explorando el Sistema Solar</title>
+
+<style>
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #080b1c;
+
+    color: white;
+
+}
+
+header {
+
+    background: #111633;
+
+    padding: 22px;
+
+    text-align: center;
+
+}
+
+header h1 {
+
+    color: #91a5ff;
+
+}
+
+nav {
+
+    margin-top: 15px;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 10px;
+
+}
+
+nav a:hover {
+
+    color: #91a5ff;
+
+}
+
+.hero {
+
+    min-height: 350px;
+
+    background: linear-gradient(#080b1c99,#080b1cdd),
+
+    url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564")
+
+    center/cover;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+.hero h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+.hero p {
+
+    max-width: 650px;
+
+    line-height: 1.6;
+
+}
+
+section {
+
+    padding: 45px 7%;
+
+    text-align: center;
+
+}
+
+section h2 {
+
+    color: #91a5ff;
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+
+}
+
+.planetas {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+
+    gap: 25px;
+
+}
+
+.card {
+
+    background: #151d3b;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    text-align: left;
+
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    background: #202b54;
+
+}
+
+.card img {
+
+    width: 100%;
+
+    height: 190px;
+
+    object-fit: cover;
+
+}
+
+.info {
+
+    padding: 20px;
+
+}
+
+.info h3 {
+
+    color: #aabaff;
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+}
+
+.info p {
+
+    line-height: 1.6;
+
+    margin-bottom: 8px;
+
+}
+
+button {
+
+    padding: 12px 22px;
+
+    background: #596dff;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+}
+
+button:hover {
+
+    background: #a4baf7;
+
+}
+
+footer {
+
+    background: #111633;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: #aaa;
+
+}
+
+@media(max-width:600px) {
+
+    .hero h2 {
+
+        font-size: 32px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🌌 SISTEMA SOLAR</h1>
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#planetas">Planetas</a>
+
+        <a href="#pluton">Plutón</a>
+
+    </nav>
+
+</header>
+
+<div class="hero" id="inicio">
+
+    <h2>Explora el Universo</h2>
+
+    <p>
+
+        Conoce los ocho planetas que forman nuestro sistema solar.
+
+        Descubre sus características, tamaños y curiosidades.
+
+    </p>
+
+    <button onclick="location.href='#planetas'">
+
+        Explorar planetas 🚀
+
+    </button>
+
+</div>
+
+<section id="planetas">
+
+<h2>Los 8 planetas del sistema solar</h2>
+
+<div class="planetas">
+
+<div class="card">
+
+<img src="https://media.gq.com.mx/photos/623f7ab8eaa378c48316e6db/16:9/w_2560%2Cc_limit/mercurio.jpg">
+
+<div class="info">
+
+<h3>☀️ Mercurio</h3>
+
+<p>Es el planeta más cercano al Sol y el más pequeño.</p>
+
+<p><b>Temperatura:</b> -180 a 430 °C aproximadamente.</p>
+
+<p><b>Dato:</b> No tiene lunas.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images-assets.nasa.gov/image/PIA00271/PIA00271~orig.jpg">
+
+<div class="info">
+
+<h3>🟡 Venus</h3>
+
+<p>Es el planeta más caliente del sistema solar.</p>
+
+<p><b>Temperatura:</b> 465 °C aproximadamente.</p>
+
+<p><b>Dato:</b> Tiene una atmósfera muy densa.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images-assets.nasa.gov/image/PIA18033/PIA18033~orig.jpg">
+
+<div class="info">
+
+<h3>🌍 Tierra</h3>
+
+<p>Es nuestro hogar y el único planeta conocido con vida.</p>
+
+<p><b>Temperatura:</b> Variable según la región.</p>
+
+<p><b>Dato:</b> Tiene un satélite natural: la Luna.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images-assets.nasa.gov/image/PIA04591/PIA04591~orig.jpg">
+
+<div class="info">
+
+<h3>🔴 Marte</h3>
+
+<p>Es conocido como el planeta rojo por el óxido de hierro de su superficie.</p>
+
+<p><b>Temperatura:</b> -65 °C de promedio.</p>
+
+<p><b>Dato:</b> Tiene dos lunas: Fobos y Deimos.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images-assets.nasa.gov/image/PIA22946/PIA22946~orig.jpg">
+
+<div class="info">
+
+<h3>🟠 Júpiter</h3>
+
+<p>Es el planeta más grande del sistema solar.</p>
+
+<p><b>Tipo:</b> Gigante gaseoso.</p>
+
+<p><b>Dato:</b> Tiene una enorme tormenta llamada Gran Mancha Roja.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images-assets.nasa.gov/image/PIA01364/PIA01364~orig.jpg">
+
+<div class="info">
+
+<h3>🪐 Saturno</h3>
+
+<p>Es famoso por sus grandes y brillantes anillos.</p>
+
+<p><b>Tipo:</b> Gigante gaseoso.</p>
+
+<p><b>Dato:</b> Sus anillos están formados principalmente por hielo y roca.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images-assets.nasa.gov/image/PIA18182/PIA18182~orig.jpg">
+
+<div class="info">
+
+<h3>🔵 Urano</h3>
+
+<p>Es un gigante helado de color azul verdoso.</p>
+
+<p><b>Tipo:</b> Gigante helado.</p>
+
+<p><b>Dato:</b> Gira prácticamente de lado.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images-assets.nasa.gov/image/PIA01492/PIA01492~orig.jpg">
+
+<div class="info">
+
+<h3>🔵 Neptuno</h3>
+
+<p>Es el planeta más lejano del Sol.</p>
+
+<p><b>Tipo:</b> Gigante helado.</p>
+
+<p><b>Dato:</b> Tiene vientos extremadamente rápidos.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="pluton">
+
+<h2>Planeta enano</h2>
+
+<div class="planetas">
+
+<div class="card">
+
+<img src="https://images-assets.nasa.gov/image/PIA19873/PIA19873~orig.jpg">
+
+<div class="info">
+
+<h3>❄️ Plutón</h3>
+
+<p>Es un planeta enano ubicado en el cinturón de Kuiper.</p>
+
+<p><b>Dato:</b> Fue reclasificado como planeta enano en 2006.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>🌌 </p>
+
+<p></p>
+
+</footer>
+
+</body>
+
+</html>      
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="misterios">
+
+    <h2>Misterios del universo</h2>
+
+    <div class="contenedor">
+
+        <div class="card">
+
+            <h3>🌑 Agujeros negros</h3>
+
+            <p>Regiones del espacio con una gravedad tan intensa que ni la luz puede escapar.</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>✨ Galaxias</h3>
+
+            <p>Grandes conjuntos de estrellas, planetas, gas y polvo cósmico.</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🪐 Exoplanetas</h3>
+
+            <p>Planetas que orbitan estrellas diferentes al Sol.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>¿Sabías que?</h2>
+
+    <div id="dato">
+
+        <p id="textoDato">
+
+            El universo contiene miles de millones de galaxias.
+
+        </p>
+
+        <button class="boton" onclick="nuevoDato()">
+
+            Otro dato interesante
+
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+    <section id="videos">
+
+    <h2>🎬 Videos sobre el Sistema Solar</h2>
+
+    <p>Aprende más sobre los planetas con estos videos educativos.</p>
+
+    <div class="planetas">
+
+        <div class="card">
+
+            <iframe width="100%" height="220"
+
+            src="https://www.youtube.com/embed/libKVRa01L8"
+
+            title="El sistema solar"
+
+            allowfullscreen></iframe>
+
+            <div class="info">
+
+                <h3>🌞 El Sistema Solar</h3>
+
+                <p>Conoce los planetas y cómo se organiza nuestro sistema solar.</p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <iframe width="100%" height="220"
+
+            src="https://www.youtube.com/embed/BZ-qLUIj_A0"
+
+            title="Los planetas"
+
+            allowfullscreen></iframe>
+
+            <div class="info">
+
+                <h3>🪐 Los 8 planetas</h3>
+
+                <p>Descubre las características de Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno.</p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <iframe width="100%" height="220"
+
+            src="https://www.youtube.com/embed/w36yxLgwUOc"
+
+            title="Exploración del sistema solar"
+
+            allowfullscreen></iframe>
+
+            <div class="info">
+
+                <h3>🚀 Explorando los planetas</h3>
+
+                <p>Descubre los diferentes mundos que existen alrededor del Sol.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <p>🌌 COSMOS | Explorando los misterios del universo</p>
+
+    <p>Hecho por Axel Jonathan Moreno Bojorges y Jairo Daniel Duran Duran</p>
+
+</footer>
+
+
+<script>
+
+const datos = [
+
+    "El Sol es una estrella y contiene la mayor parte de la masa del sistema solar.",
+
+    "Júpiter tiene decenas de lunas conocidas.",
+
+    "La luz del Sol tarda aproximadamente 8 minutos en llegar a la Tierra.",
+
+    "En el espacio existen estrellas mucho más grandes que nuestro Sol.",
+
+    "La Vía Láctea es la galaxia donde se encuentra nuestro sistema solar."
+
+]; 
+function nuevoDato() {
+
+    let numero = Math.floor(Math.random() * datos.length);
+
+    document.getElementById("textoDato").textContent = datos[numero];
+
+}
+
+</script>
+
+</body>
+
+</html>
+ <section class="botones-accion" id="contacto">
+
+            <a href="https://www.nasa.gov/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primario">
+                Conocer más
+            </a>
+
+            <a href="#inicio" class="btn btn-secundario">
+                Volver Arriba
+            </a>
+
+        </section>
+
+    </main>
